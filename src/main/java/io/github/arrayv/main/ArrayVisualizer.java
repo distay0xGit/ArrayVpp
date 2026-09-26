@@ -695,7 +695,7 @@ public final class ArrayVisualizer {
                 case AUX_STATS:
                     for(String neostat : statSnapshot.parseMap()) {
                         wMax = Math.max(wMax, this.mainRender.getFontMetrics().stringWidth(neostat));
-                        mainRender.drawString(neostat, xOffset, yPos + yOffset);
+                        drawString(neostat, xOffset, yPos + yOffset, dropShadow);
                         yPos += fHeight - 2;
                     }
                     continue statLoop;

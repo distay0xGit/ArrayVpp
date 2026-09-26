@@ -30,6 +30,7 @@ public class HeatMap extends VisualFeature {
     	
         this.setListID("heat");
         this.setListName("Heat Map");
+        this.setFlipsDown("$color");
     }
     
     public static Color getColor(int[] array, int pos) {
